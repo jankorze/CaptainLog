@@ -184,6 +184,103 @@ nav ul li {
   }
 }
 
+.hide-menu {
+  display: block;
+  -webkit-animation: hide-menu 1s ease-in forwards;
+          animation: hide-menu 1s ease-in forwards;
+}
+
+.hide-menu .close-btn {
+  -webkit-animation: hide-close-btn 1s 1s forwards;
+          animation: hide-close-btn 1s 1s forwards;
+}
+
+.hide-menu li:nth-of-type(1) {
+  -webkit-animation: hide-name 1s forwards 1s ease-in-out;
+          animation: hide-name 1s forwards 1s ease-in-out;
+}
+
+.hide-menu li:nth-of-type(2) {
+  -webkit-animation: hide-name 1s forwards 1.4s ease-in-out;
+          animation: hide-name 1s forwards 1.4s ease-in-out;
+}
+
+.hide-menu li:nth-of-type(3) {
+  -webkit-animation: hide-name 1s forwards 1.8s ease-in-out;
+          animation: hide-name 1s forwards 1.8s ease-in-out;
+}
+
+.hide-menu li:nth-of-type(4) {
+  -webkit-animation: hide-name 1s forwards 2.2s ease-in-out;
+          animation: hide-name 1s forwards 2.2s ease-in-out;
+}
+
+@-webkit-keyframes hide-menu {
+  from {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  to {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+@keyframes hide-menu {
+  from {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  to {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+@-webkit-keyframes hide-close-btn {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes hide-close-btn {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes hide-name {
+  from {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+@keyframes hide-name {
+  from {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+}
+
 .text {
   margin: auto;
   width: 80%;

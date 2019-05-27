@@ -79,7 +79,8 @@ nav{
         }
     }
 }
-
+//Animacija za odpiranje menija 
+//-------------------------------------------------------------------------------------------------------------
 .show-menu{
     display:block;
     animation : slide-menu 1s ease-in forwards;
@@ -101,6 +102,8 @@ nav{
 
 }
 
+
+//animacija za prikaza menija 
 @keyframes slide-menu{
     from{
         transform : scaleX(0);
@@ -109,6 +112,7 @@ nav{
         transform : scaleX(1);
     }
 }
+//animacija za kazanje gumba za zapiranje
 @keyframes show-close-btn{
     from{
         opacity: 0;
@@ -117,6 +121,7 @@ nav{
         opacity: 1;
     }
 }
+//animacija za kazanje imena nalog
 @keyframes show-name{
     from{
         transform: translateY(50%);
@@ -125,6 +130,58 @@ nav{
     to{
         transform: translateY(0); 
         opacity: 1;
+    }
+}
+
+//---------------------------------------------------------------------------------------------------------------------------
+//animacija za zapiranje menija
+.hide-menu{
+    display:block;
+    animation : hide-menu 1s ease-in forwards;
+        .close-btn{
+            animation: hide-close-btn 1s 1s forwards;
+        }
+        li:nth-of-type(1){
+            animation : hide-name 1s forwards 1s ease-in-out;
+        }
+        li:nth-of-type(2){
+            animation : hide-name 1s forwards 1.4s ease-in-out;
+        }
+        li:nth-of-type(3){
+            animation : hide-name 1s forwards 1.8s ease-in-out;
+        }
+        li:nth-of-type(4){
+            animation : hide-name 1s forwards 2.2s ease-in-out;
+        }
+
+}
+//animacija za skrivanje menija
+@keyframes hide-menu{
+    from{
+        transform : scaleX(1);
+    }
+    to{
+        transform: scaleX(0);
+    }
+}
+//animacija za skrivanje gumba
+@keyframes hide-close-btn{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+//animacija za skrivanje imena naloge
+@keyframes hide-name{
+    from{
+        transform: translateY(50%);
+        opacity:1
+    }
+    to{
+        transform: translateY(0); 
+        opacity: 0;
     }
 }
 
