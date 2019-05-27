@@ -329,26 +329,26 @@ nav ul li {
 
 @-webkit-keyframes load-site {
   from {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
     opacity: 0;
   }
   to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
 
 @keyframes load-site {
   from {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
     opacity: 0;
   }
   to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }

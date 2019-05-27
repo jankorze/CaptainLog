@@ -206,6 +206,7 @@ nav{
     text-align: center;
     font-size: 4em;
     margin-bottom: 1em;
+    
    
 
 
@@ -218,6 +219,7 @@ nav{
     margin-top: 2em;
     margin-left: 10%;
     transition: transform .2s;
+    
    
 
 
@@ -244,11 +246,11 @@ nav{
 }
 @keyframes load-site{
     from{
-        transform: scaleX(0);
-        opacity: 0;
+        transform: translateY(40%);
+        opacity:0;
     }
     to{
-        transform : scaleX(1);
+        transform: translateY(0); 
         opacity: 1;
     }
 }
