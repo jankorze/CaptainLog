@@ -11,13 +11,14 @@
     
 </head>
 
-<body>
+<body onload="animacija()">
     <header>
         <a href="#" class="logo">Captain's Log</a>
         <a href="index.html"><img src="images/close.png" id="close-menu" class="back-btn"></a>
     </header>
-    <div class="naslov-naloge">Naslov Naloge</div>
-    <div class="text">
+  
+    <div class="naslov-naloge" id="naslov">Naslov Naloge</div>
+    <div class="text" id="navodilo">
     Navodila za neko nalogo Navodila za neko nalogo Navodila za neko nalogo Navodila za neko nalogo Navodila za neko nalogo
     Navodila za neko nalogo Navodila za neko nalogo Navodila za neko nalogo Navodila za neko nalogo Navodila za neko nalogo
     Navodila za neko nalogo Navodila za neko nalogo Navodila za neko nalogo Navodila za neko nalogo Navodila za neko nalogo
@@ -33,7 +34,12 @@
     <img  class="naloga-img" src="images/random.png">
 
     
-
+    <script>
+        function animacija(){
+            var body=document.getElementsByTagName('body');
+            body.classList.add('naloga-animacija');
+        }
+        </script>
 </body>
 
 </html>

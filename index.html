@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jan's Log</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/pirate-flag-png-5a3a72be633ba3.64309028151377990240655433.jpg" type="image/png">
     <script src="js/main.js"></script>
 </head>
 <body>
@@ -14,21 +15,69 @@
            <ul>
                 <li>
                     <a href="naloga1.html">Naloga 1</a>
+                    <span class="datum-naloge">13.12.2001</span>
                     <span>Navodilo Naloge</span>
                 </li>
                 <li>
                     <a href="#">Naloga 2</a>
+                    <span class="datum-naloge">13.12.2001</span>
                     <span>Navodilo Naloge</span>
                 </li>
                 <li>
                     <a href="#">Naloga 3</a>
+                    <span class="datum-naloge">13.12.2001</span>
                     <span>Navodilo Naloge</span>
                 </li>
                 <li>
                     <a href="#">Naloga 4</a>
+                    <span class="datum-naloge">13.12.2001</span>
                     <span>Navodilo Naloge</span>
                 </li>
             </ul>
+            <ul>
+                    <li>
+                        <a href="naloga1.html">Naloga 1</a>
+                        <span class="datum-naloge">13.12.2001</span>
+                        <span>Navodilo Naloge</span>
+                    </li>
+                    <li>
+                        <a href="#">Naloga 2</a>
+                        <span class="datum-naloge">13.12.2001</span>
+                        <span>Navodilo Naloge</span>
+                    </li>
+                    <li>
+                        <a href="#">Naloga 3</a>
+                        <span class="datum-naloge">13.12.2001</span>
+                        <span>Navodilo Naloge</span>
+                    </li>
+                    <li>
+                        <a href="#">Naloga 4</a>
+                        <span class="datum-naloge">13.12.2001</span>
+                        <span>Navodilo Naloge</span>
+                    </li>
+                </ul>
+                <ul>
+                        <li>
+                            <a href="naloga1.html">Naloga 1</a>
+                            <span class="datum-naloge">13.12.2001</span>
+                            <span>Navodilo Naloge</span>
+                        </li>
+                        <li>
+                            <a href="#">Naloga 2</a>
+                            <span class="datum-naloge">13.12.2001</span>
+                            <span>Navodilo Naloge</span>
+                        </li>
+                        <li>
+                            <a href="#">Naloga 3</a>
+                            <span class="datum-naloge">13.12.2001</span>
+                            <span>Navodilo Naloge</span>
+                        </li>
+                        <li>
+                            <a href="#">Naloga 4</a>
+                            <span class="datum-naloge">13.12.2001</span>
+                            <span>Navodilo Naloge</span>
+                        </li>
+                    </ul>
     </nav>
     <header>
         <a href="#" class="logo">Captain's Log</a>
@@ -44,10 +93,13 @@
         var overlay=document.getElementById("overlay");
         var closeMenu=document.getElementById("close-menu");
         document.getElementById('open-menu').addEventListener('click', function(){
+            overlay.classList.remove('hide-menu');
             overlay.classList.add('show-menu');
+            
         });
         document.getElementById('close-menu').addEventListener('click', function(){
             overlay.classList.add('hide-menu');
+            overlay.classList.remove('show-menu');
            
         });
     </script>
