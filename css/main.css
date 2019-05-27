@@ -89,7 +89,6 @@ nav ul .datum-naloge {
 
 nav ul li {
   opacity: 0;
-  float: left;
 }
 
 .show-menu {
@@ -320,5 +319,37 @@ nav ul li {
   float: right;
   width: 32px;
   cursor: pointer;
+}
+
+.load-in-anim {
+  display: block;
+  -webkit-animation: load-site 0.6s ease-in forwards;
+          animation: load-site 0.6s ease-in forwards;
+}
+
+@-webkit-keyframes load-site {
+  from {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes load-site {
+  from {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */

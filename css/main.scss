@@ -79,7 +79,7 @@ nav{
         }
         li{
             opacity: 0;
-            float:left;
+            
         }
     }
 }
@@ -195,6 +195,8 @@ nav{
     width: 80%;
     text-align: left;
    
+ 
+   
 
 
 }
@@ -203,6 +205,7 @@ nav{
     text-align: center;
     font-size: 4em;
     margin-bottom: 1em;
+    
 
 
 
@@ -214,6 +217,7 @@ nav{
     margin-top: 2em;
     margin-left: 10%;
     transition: transform .2s;
+    
 
 
 }
@@ -232,3 +236,20 @@ nav{
     
 
 }
+.load-in-anim{
+    display:block;
+    animation : load-site 0.6s ease-in forwards;
+
+}
+@keyframes load-site{
+    from{
+        transform: translateY(40%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0); 
+        opacity: 1;
+    }
+}
+
+
