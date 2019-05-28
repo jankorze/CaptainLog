@@ -214,24 +214,19 @@ nav{
 
 }
 .naloga-img{
-    width: 20%;
-    height: 20%;
-    float: left;
-    margin-top: 2em;
-    margin-left: 10%;
-    transition: transform .2s;
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+
+    margin-right: auto;
+   
     
    
 
 
 }
-.naloga-img:hover{
-  transform: scale(2);
-   
- 
 
-
-}
 .back-btn{
     float:right;
     width: 32px;
