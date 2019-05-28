@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
- 
+ $mobile: 150px;
  $desktop : 800px; 
  @mixin desktop{
      @media (min-width: #{$desktop}){
          @content;
      }
  }
+@mixin mobile{
+    @media (min-width: #{$mobile}){
+        @content;
+    }
+}
 
 html, body{
     font-family: 'Dosis', sans-serif;
@@ -66,9 +71,7 @@ nav{
         list-style-type:none;
         margin: 10% auto 0 auto;
         padding: 0;
-        //display: grid;
-        //grid-template-columns: repeat(4, 25%);
-        //width: 80%;
+      
             @include desktop(){
             display: grid;
             grid-template-columns: repeat(4, 25%);
@@ -92,12 +95,13 @@ nav{
             color:white;
         }
         li{
-           
-            
+          
             opacity: 0;
-           @include mobile(){
-              margin-top: 30px; 
-           }
+            @include mobile(){
+                margin-left : 40%;
+                margin-top: 40px;
+                
+            }
                 
         }
     }
