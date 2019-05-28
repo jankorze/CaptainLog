@@ -64,11 +64,16 @@ nav ul {
   list-style-type: none;
   margin: 10% auto 0 auto;
   padding: 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (25%)[4];
-      grid-template-columns: repeat(4, 25%);
-  width: 80%;
+}
+
+@media (min-width: 800px) {
+  nav ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (25%)[4];
+        grid-template-columns: repeat(4, 25%);
+    width: 80%;
+  }
 }
 
 nav ul a {
@@ -90,6 +95,12 @@ nav ul .datum-naloge {
 
 nav ul li {
   opacity: 0;
+}
+
+@media (max-width: 800px) {
+  nav ul li {
+    margin-top: 30px;
+  }
 }
 
 .show-menu {
